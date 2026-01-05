@@ -5,71 +5,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amit Kumar | AI Engineer</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
-    header { padding: 60px 20px; background: #020617; color: white; text-align: center; }
-    section { max-width: 900px; margin: auto; padding: 40px 20px; }
-    h2 { border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; }
-    .card { background: white; padding: 20px; margin-top: 20px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; }
-    footer { text-align: center; padding: 30px; background: #020617; color: white; }
-    a { color: #2563eb; text-decoration: none; }
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 0;
+      background: #ffffff;
+    }
+    nav {
+      max-width: 760px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111827;
+      font-size: 15px;
+    }
+    .container {
+      max-width: 760px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .hero img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 60px;
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .muted {
+      color: #6b7280;
+      font-size: 15px;
+    }
+    .post {
+      margin-top: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 32px; }
+      p { font-size: 17px; }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Amit Kumar</h1>
-  <p>AI Engineer | Data Science & AI | Full-Stack Developer</p>
-  <p>
-    <a href="mailto:mb23037@students.iitmandi.ac.in">Email</a> ·
-    <a href="https://www.linkedin.com/in/amit-kumar-bhatia-a47032301">LinkedIn</a>
-  </p>
+  <nav>
+    <strong>Amit Kumar</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <div class="card">
-    Master’s student in Data Science & AI at IIT Mandi with industry experience in AI-driven products,
-    real-time ML systems, and business automation delivering measurable impact.
-  </div>
-</section>
+<div class="container">
 
-<section>
-  <h2>Education</h2>
-  <div class="grid">
-    <div class="card">M.Tech (DS & AI) – IIT Mandi (2023–2025)</div>
-    <div class="card">B.Tech (ECE) – Panjab University (2017–2021)</div>
-  </div>
-</section>
+  <section class="hero">
+    <img src="profile.jpg" alt="Amit Kumar" />
+    <h1>AI Engineer</h1>
+    <p class="muted">Machine Learning · LLMs · Data & ML Systems</p>
+    <p>
+      I’m an AI Engineer specializing in building production-ready machine learning systems,
+      large language model applications, and real-time data pipelines that solve real business problems.
+    </p>
+  </section>
 
-<section>
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>AI Engineer – Opt2Deal Pvt Ltd</h3>
-    <p>Built ML pipelines, real-time analytics, AWS event-driven systems. Improved profitability by ₹96L.</p>
-  </div>
-  <div class="card">
-    <h3>Software Engineer – Quadyster</h3>
-    <p>Full-stack development, automation tools, RFP/RFI technical analysis.</p>
-  </div>
-</section>
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am pursuing a Master’s in Data Science & AI at IIT Mandi. I have hands-on experience designing
+      end-to-end ML pipelines, deploying AI services on cloud infrastructure, and translating
+      business requirements into scalable AI solutions.
+    </p>
+  </section>
 
-<section>
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">LLM-Based Document Assistant (GPT-4 + RAG)</div>
-    <div class="card">AI-Powered Marketing Platform</div>
-    <div class="card">Self-Healing Healthcare System</div>
-    <div class="card">AI Reservation System</div>
-  </div>
-</section>
+  <section id="projects">
+    <h2>AI Projects</h2>
 
-<section>
-  <h2>Skills</h2>
-  <div class="card">
-    Python, Machine Learning, NLP, LLMs, AWS, Docker, React, Node.js, SQL, AI Automation
-  </div>
-</section>
+    <div class="post">
+      <h3>LLM-Based Document Intelligence System</h3>
+      <p class="muted">GPT-4 · RAG · LangChain</p>
+      <p>
+        Built a document intelligence system using Retrieval-Augmented Generation to extract insights
+        from large document collections, reducing information retrieval time by 70%.
+      </p>
+    </div>
+
+    <div class="post">
+      <h3>AI-Powered Marketing Intelligence Platform</h3>
+      <p class="muted">Kafka · Airflow · Tableau</p>
+      <p>
+        Designed real-time ETL pipelines and dashboards for SMBs, improving user engagement by 47%
+        and reducing marketing costs by 22%.
+      </p>
+    </div>
+
+    <div class="post">
+      <h3>Self-Healing Healthcare AI System</h3>
+      <p class="muted">BERT · Blockchain · NLP</p>
+      <p>
+        Developed a blockchain-secured healthcare AI system to predict health risks and trigger
+        real-time alerts, reducing diagnosis delays.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="post">
+      <h3>AI Engineer — Opt2Deal Pvt Ltd</h3>
+      <p class="muted">May 2024 – Oct 2024</p>
+      <p>
+        Built predictive ML models, event-driven data pipelines, and real-time AI dashboards using
+        AWS Lambda, Kinesis, Glue, and Redshift. Contributed to a ₹96L profitability improvement
+        through AI-driven automation.
+      </p>
+    </div>
+
+    <div class="post">
+      <h3>Software Engineer — Quadyster</h3>
+      <p class="muted">Sep 2022 – Nov 2025</p>
+      <p>
+        Worked on full-stack systems, internal automation tools, and analytics workflows.
+        Collaborated with cross-functional teams using Agile methodologies.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:mb23037@students.iitmandi.ac.in">mb23037@students.iitmandi.ac.in</a><br />
+      LinkedIn: <a href="https://www.linkedin.com/in/amit-kumar-bhatia-a47032301">amit-kumar-bhatia</a>
+    </p>
+  </section>
+
+</div>
 
 <footer>
   © 2026 Amit Kumar · AI Engineer
